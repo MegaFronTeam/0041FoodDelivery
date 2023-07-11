@@ -1,0 +1,49 @@
+mixin sProd(data)
+	// start sProd
+	+b.SECTION.sProd.section#sProd&attributes(attributes)
+		.container
+				.panel-block
+					+e.row.row
+						.col-lg-6
+							+e.img-wrap
+								.img-wrap-center
+									+img('img/img.jpg')
+							+e.caption 
+								+breadcrumb('Seafood','Pizza')
+						.col-lg-6
+							+b.section-title
+								.h2 Choose what you like
+							+e.group
+								mixin name(n)
+									label
+										<input type="checkbox" class="btn-check" name="name" autocomplete="off">
+										span(class="btn btn-outline-primary")= n
+								+name(`Mozzarella `)
+								+name(`Alfredo sauce `)
+								+name(`Tomatoes`)
+								+name(`Mozzarella `)
+								+name(`Alfredo sauce `)
+								+name(`Blue cheese  `)
+							mixin radio(n)
+								label
+									input(type="radio"  class="btn-check"  autocomplete="off")&attributes(attributes) 
+									span(class="btn btn-white")= n
+							+e.group
+								+e.group-title Pizza size:
+								+e.line
+									+radio('Small')(name="size")
+									+radio('Medium')(name="size")
+									+radio('Big')(name="size")
+							+e.group
+								+e.group-title Pizza dough:
+								+e.line
+									+radio('Small')(name="dough")
+									+radio('Medium')(name="dough") 
+							br
+							.h2  Total price: $135
+							+e.total-price
+								+e.btn.btn.btn-primary(type="button") Add to card
+								+addblock()
+							block
+
+	// end sProd

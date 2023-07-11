@@ -1,0 +1,23 @@
+mixin aside(data)
+	// start aside
+	+b.ASIDE.aside--js&attributes(attributes)
+		+e.slider--js.swiper
+			.swiper-wrapper
+				- for (var x = 1; x < 10; x++)
+					+e.slide.swiper-slide
+						+e.link(href="#" class=`${x==2 ? 'active' : " "}`)
+							+e.img-wrap
+								+img(`img/aside-prod-${x}.png`)
+							+e.caption.d-lg-none  Rolls
+				- for (var x = 1; x < 10; x++)
+					+e.slide.swiper-slide
+						+e.link(href="#")
+							+e.img-wrap
+								+img(`img/aside-prod-${x}.png`)
+							+e.caption.d-lg-none  Rolls
+		.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+			+icon('chevron-down')
+		.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+			+icon('chevron-down')
+	// end aside
+	

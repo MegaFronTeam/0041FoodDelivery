@@ -1,0 +1,34 @@
+mixin Pslider()
+	+e.slider.base-slide.base-slide--js.swiper
+		.swiper-wrapper
+			mixin item(i,t,p)
+				+e.slide.swiper-slide.w-auto
+					+e.item(href="#")
+						+e.img-wrap
+							.img-wrap-center
+								+img(`img/popular-${i}.jpg`)
+						+e.title.mono= t
+						p!= p
+			- for (var x = 0; x < 3; x++)
+				+item(1,`Seafood`,`Pizza`)
+				+item(2,`Spice roll with smoked salmon `,`Rolls`)
+				+item(3,`Chahan with chicken`,`Wok`)
+				+item(4,`Chicken sandwich`,`Sandwiches`)
+				+item(5,`Tom Yam`,`Soup`)
+				+item(6,`Caesar with shrimps`,`Salads `)
+				+item(7,`Pepperoni`,`Pizza`)
+				+item(8,`Beef with potatoes and mushrooms `,`Snacks`)
+mixin sPopular(data)
+	// start sPopular
+	+b.SECTION.sPopular.section#sPopular&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Popular this week
+			+Pslider()
+	// end sPopular
+mixin sPopular2(data)
+	// start sPopular
+	+b.sPopular.section&attributes(attributes)
+			h2 You may also like
+			+Pslider()
+	// end sPopular

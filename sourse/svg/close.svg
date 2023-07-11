@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="close">
+<circle id="Ellipse 5" cx="12" cy="12.0001" r="10.5" stroke="#AEB3B9"/>
+<line id="Line 4" x1="7.70711" y1="8.00006" x2="16" y2="16.293" stroke="#AEB3B9" stroke-linecap="round"/>
+<line id="Line 5" x1="0.5" y1="-0.5" x2="12.2279" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 17 8.00006)" stroke="#AEB3B9" stroke-linecap="round"/>
+</g>
+</svg>

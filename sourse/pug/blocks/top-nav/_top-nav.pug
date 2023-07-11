@@ -1,0 +1,56 @@
+mixin menu-toggle()
+	+b.toggle-menu-mobile--js.d-lg-none&attributes(attributes)
+		span
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.menu-mobile--js
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+mnu()
+	//  мобильное меню
+mixin logo()
+	+b.logo(href="/") FOOD
+		strong ROCKET
+		+e.before FOOD
+			strong ROCKET
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container-fluid
+			.row
+				.col
+					+logo
+
+				.col-lg-auto.order-lg-0.order-last
+					.menu-mobile.menu-mobile--js
+						.menu-mobile__inner
+							+menu-toggle()
+							.d-lg-none
+								+logo
+							.row
+								.col-lg-auto
+									+mnu()
+								.col-lg-auto 
+									+e.btn.btn.btn-white(href="#")
+										+icon("phone")
+				.col-auto
+					+e.btn--cart.btn.btn-primary(href="#")
+						+e.btn-text.d-none.d-md-block Card
+						+e.btn-icon
+							.hold-block
+								+icon("cart")
+							+icon("arrow-right")
+						.cart-number-mobile.d-md-none 99
+
+				.col-auto.d-lg-none
+					+menu-toggle().btn.btn-primary
+	// end top-nav

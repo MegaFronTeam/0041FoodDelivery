@@ -1,0 +1,39 @@
+mixin footer()
+	+b.FOOTER.footer.section
+		.container
+			+e.row.row
+				.col-auto
+					p.strong Menu
+					ul
+						li: a(href="#") Menu with delivery
+						li: a(href="#") Menu in restaurant
+						li: a(href="#") Pizza Hut Express
+						li: a(href="#") Takeaway offers
+				.col-auto
+					p.strong FoodRocket
+					ul
+						li: a(href="#") Rewards
+						li: a(href="#") Restaurants
+						li: a(href="#") Work at FoodRocket
+						li: a(href="#") Contact
+						li: a(href="#") Franchise
+				.col-auto
+					p.strong Informations 
+					ul
+						li: a(href="#") Allergens and nutritional values
+						li: a(href="#") Regulations
+						li: a(href="#") FAQ
+				.col-12.d-xl-none
+				+e.col--flex.--left.col.order-xl-first
+					+b.logo(href="/") FOOD
+						strong ROCKET
+
+					+e.copy © Copyright 2020 — 2021 «FOODROCKET» LLC.
+						br
+						| All Rights Reserved.
+						br
+						| 6+
+				+e.col--flex.--right.col-xl.col-auto.order-xl-last
+					.h2.mono
+						a.text-body(href="tel:8 800 333-33-33") 8 800 333-33-33 
+					+soc

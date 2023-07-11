@@ -1,0 +1,30 @@
+{
+	"nav":[
+		{ "name":"Menu", "url":"#"},
+		{	"name":"Delivery", "url":"#"},
+		{"name":"Promotions", "url":"#"},
+		{"name":"Contacs", "url":"#"}
+	],
+	"social":[
+		"instagram","fb"
+	],
+	"index":{
+		"head": {
+			"title": "тест dffsdf dfsdтест 2222"
+		}
+	},
+	"items": [
+			{
+			"title": "заловок",
+			"text": "текст"
+		},
+			{
+			"title": "заловок 22",
+			"text": "текст"
+		},
+			{
+			"title": "заловок 33",
+			"text": "текст"
+			}
+		]
+	}

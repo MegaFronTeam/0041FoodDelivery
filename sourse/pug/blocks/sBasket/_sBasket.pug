@@ -1,0 +1,152 @@
+mixin sBasket(data)
+	// start sBasket
+	+b.SECTION.sBasket.section#sBasket&attributes(attributes)
+		.container
+			.panel-block
+				.section-title
+					h2 Your order
+				table.table-basket
+					- for (var x = 1; x < 4; x++)
+						tr
+							td
+								.row
+									.col-auto
+										+e.img-wrap(href="#")
+											.img-wrap-center
+												+img(`img/popular-${x}.jpg`) 
+									.col
+										+e.caption
+											
+											a.mono.h2(href="#") Caesar
+											p.text-light  Small • Traditional with pepperoni
+							td
+								+addblock()
+							td.text-m-end
+								.h2.mono.mb-0 $142
+								+e.price-old $51
+							td.text-m-end
+								+e.delete
+									+icon("close")
+				.row.gy-3
+					.col
+						+e.promocode
+							+input('Enter promo code...')
+							button.btn.btn-primary
+								+icon("arrow-right")
+					.col-sm-auto
+						+e.total-pricce 
+							| Total: 
+							span.text-white $130
+
+			+b.form-wrap.panel-block
+				.section-title
+					h2 Contact information
+				+e.row.row.row--xl.mb-5
+					.col-lg-6 
+						+input("Name",'text','Name')
+					.col-lg-6 
+						+input("Phone number",'text','Phone number')
+				.section-title
+					h2 Delivery details
+				+e.row.row.row--xl.mb-5
+					.col-12
+						+input("Address",'text','Address')
+					.col-lg-6 
+						+input("Enter your flat",'text','Flat')
+					.col-lg-6 
+						+input("Floor",'text','Enter your floor')
+					.col-12
+						.fw-500 Delivery time
+					.col-auto
+						+in-c("radio",'As soon as possible',' time')
+					.col-auto
+						+in-c("radio",'Select time',' time')
+				+e.row.row.row--xl.mb-5
+					.col-lg-6 
+						.form-wrap__input-title
+							| Day
+							+icon("calendar")
+						+input("Today",'select').custom-select-js
+					.col-lg-6 
+						.form-wrap__input-title
+							| Time
+							+icon("time")
+						+input("15:00 - 15:30",'select').custom-select-js
+			.panel-block
+				.section-title
+					h2 Payment
+				+e.pay-blcok
+					+in-c("radio",'',' pay')
+						.row
+							.col  PayU
+							.col-auto
+								+img(src="img/pay-1.png", alt="")
+							
+					+in-c("radio",'',' pay')
+						.row
+							.col  PayU
+							.col-auto
+								+img(src="img/pay-2.png", alt="")
+					+in-c("radio",'',' pay')
+						.row
+							.col  PayU
+							.col-auto
+								+img(src="img/pay-3-1.png", alt="")
+							.col-auto
+								+img(src="img/pay-3-1.png", alt="")
+					+in-c("radio",'',' pay')
+						.row
+							.col  Credit card
+							.col-auto
+								+img(src="img/pay-4.png", alt="")
+					+in-c("radio",'',' pay')
+						.row
+							.col  PayU
+							.col-auto
+								+img(src="img/pay-5.png", alt="")
+					+in-c("radio",'',' pay')
+						.row
+							.col  PayU
+							.col-auto
+								+img(src="img/pay-6.png", alt="")
+				.row
+					.col
+						+e.btn.btn.btn-outline-secondary(href="#")
+							+icon("arrow-left")
+							span.d-none.d-sm-block Go back
+					.col-auto
+						+e.btn.btn.btn-primary(href="#") Order and Pay
+	// end sBasket
+mixin sBasket4(data)
+	// start sBasket
+	+b.SECTION.sBasket--ordered.section#sBasket&attributes(attributes)
+		.container
+			.panel-block
+				.section-title
+					h1 Your order №123456 is accepted!
+				table
+					thead
+						tr
+							th
+							th(colspan="4") Order details
+					tbody
+						tr.border-0
+							td.border-0(rowspan="2")
+								img(src="img/select.svg", alt="")
+							td.border-0.pb-0 total:
+
+							td.border-0.pb-0 $130 
+							td.border-0.pb-0 Payment:
+							td.border-0.pb-0 Credit card
+						tr.border-0
+							
+							td.border-0.pt-0 Delivery:
+							td.border-0.pt-0 Warsaw, Street Mack, 24
+							td.border-0.pt-0
+							td.border-0.pt-0
+					tfoot
+						td
+						td(colspan="4").ps-0
+							p If you have any questions, please call us at the toll free number 8-700-000-00-00 (from 9:00 to 18:00) 
+
+	// end sBasket

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>тест dffsdf dfsdтест 2222</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="libs/select2/css/select2.min.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+							wrap.remove();
+						}
+					);
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<!-- start sPopular-->
+				<section class="sPopular section" id="sPopular">
+					<div class="container">
+						<div class="section-title">
+							<h2>Popular this week</h2>
+						</div>
+						<div class="sPopular__slider base-slide base-slide base-slide--js swiper">
+							<div class="swiper-wrapper">
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Seafood
+											</div>
+											<p>Pizza</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-2.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Spice roll with smoked salmon 
+											</div>
+											<p>Rolls</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-3.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Chahan with chicken
+											</div>
+											<p>Wok</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-4.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Chicken sandwich
+											</div>
+											<p>Sandwiches</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-5.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Tom Yam
+											</div>
+											<p>Soup</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-6.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Caesar with shrimps
+											</div>
+											<p>Salads </p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-7.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Pepperoni
+											</div>
+											<p>Pizza</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-8.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Beef with potatoes and mushrooms 
+											</div>
+											<p>Snacks</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Seafood
+											</div>
+											<p>Pizza</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-2.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Spice roll with smoked salmon 
+											</div>
+											<p>Rolls</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-3.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Chahan with chicken
+											</div>
+											<p>Wok</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-4.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Chicken sandwich
+											</div>
+											<p>Sandwiches</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-5.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Tom Yam
+											</div>
+											<p>Soup</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-6.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Caesar with shrimps
+											</div>
+											<p>Salads </p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-7.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Pepperoni
+											</div>
+											<p>Pizza</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-8.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Beef with potatoes and mushrooms 
+											</div>
+											<p>Snacks</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-1.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Seafood
+											</div>
+											<p>Pizza</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-2.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Spice roll with smoked salmon 
+											</div>
+											<p>Rolls</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-3.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Chahan with chicken
+											</div>
+											<p>Wok</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-4.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Chicken sandwich
+											</div>
+											<p>Sandwiches</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-5.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Tom Yam
+											</div>
+											<p>Soup</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-6.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Caesar with shrimps
+											</div>
+											<p>Salads </p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-7.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Pepperoni
+											</div>
+											<p>Pizza</p>
+										</a>
+									</div>
+									<div class="sPopular__slide swiper-slide w-auto">
+										<a class="sPopular__item" href="#">
+											<div class="sPopular__img-wrap">
+												<div class="img-wrap-center"><img src="img/popular-8.jpg" alt="" loading="lazy"/>
+												</div>
+											</div>
+											<div class="sPopular__title mono">Beef with potatoes and mushrooms 
+											</div>
+											<p>Snacks</p>
+										</a>
+									</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sPopular-->
+				<!-- start aside-->
+				<aside class="aside aside--js">
+					<div class="aside__slider aside__slider--js swiper">
+						<div class="swiper-wrapper">
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-1.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link active" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-2.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-3.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-4.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-5.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-6.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-7.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-8.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-9.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-1.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-2.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-3.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-4.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-5.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-6.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-7.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-8.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+							<div class="aside__slide swiper-slide">
+								<a class="aside__link" href="#">
+									<div class="aside__img-wrap"><img src="img/aside-prod-9.png" alt="" loading="lazy"/>
+									</div>
+									<div class="aside__caption d-lg-none"> Rolls
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+						<svg class="icon icon-chevron-down ">
+							<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+						</svg>
+					</div>
+					<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+						<svg class="icon icon-chevron-down ">
+							<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+						</svg>
+					</div>
+				</aside>
+				<!-- end aside-->
+				<!-- start sCatalog-->
+				<div class="sCatalog section">
+					<div class="container">
+						<div class="section-title">
+							<h2>Rolls </h2>
+						</div>
+						<div class="sCatalog__row row">
+							<div class="sCatalog__col col-xl-3 col-lg-4 col-sm-6">
+								<article class="product-item" href="#">
+									<div class="product-item__label">NEW
+									</div>
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
+										</div>
+									</div>
+									<div class="product-item__caption">
+										<div class="product-item__title text-body">Sake maki 
+										</div>
+										<div class="product-item__text">tiger shrimp, crab cream, cucumber, bell pepper, iceberg lettuce, masago, honey sauce (6 pcs.)
+										</div>
+										<div class="row">
+											<div class="col">
+												<div class="product-item__price mono text-danger">$129.5
+												</div>
+												<div class="product-item__price product-item__price--old">$10
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="product-item__btn btn btn-primary" href="#">Add
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-xl-3 col-lg-4 col-sm-6">
+								<article class="product-item" href="#"> 
+									<div class="product-item__label"><img src="img/leaf.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
+										</div>
+									</div>
+									<div class="product-item__caption">
+										<div class="product-item__title text-body">Philadelphia roll with eel
+										</div>
+										<div class="product-item__text">crab meat, cucumber, avocado, masago, tuna, wasabi (6 pcs.) 
+										</div>
+										<div class="row">
+											<div class="col">
+												<div class="product-item__price mono">$7.5
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="product-item__btn btn btn-primary" href="#">Add
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-xl-3 col-lg-4 col-sm-6">
+								<article class="product-item" href="#"> 
+									<div class="product-item__label"><img src="img/hot-pepper.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
+										</div>
+									</div>
+									<div class="product-item__caption">
+										<div class="product-item__title text-body">Spice roll with smoked salmon
+										</div>
+										<div class="product-item__text">tiger shrimp, crab cream, cucumber, bell pepper, iceberg lettuce, masago, honey sauce (6 pcs.)
+										</div>
+										<div class="row">
+											<div class="col">
+												<div class="product-item__price mono text-danger">$129.5
+												</div>
+												<div class="product-item__price product-item__price--old">$10
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="product-item__btn btn btn-primary" href="#">Add
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<!-- /.product-item-->
+							</div>
+							<div class="sCatalog__col col-xl-3 col-lg-4 col-sm-6">
+								<article class="product-item" href="#"> 
+									<div class="product-item__label text-success">ECO
+									</div>
+									<div class="product-item__img-wrap">
+										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
+										</div>
+									</div>
+									<div class="product-item__caption">
+										<div class="product-item__title text-body">Sake maki 
+										</div>
+										<div class="product-item__text">tiger shrimp, crab cream, cucumber, bell pepper, iceberg lettuce, masago, honey sauce (6 pcs.)
+										</div>
+										<div class="row">
+											<div class="col">
+												<div class="product-item__price mono text-danger">$129.5
+												</div>
+												<div class="product-item__price product-item__price--old">$10
+												</div>
+											</div>
+											<div class="col-auto">
+												<a class="product-item__btn btn btn-primary" href="#">Add
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+								<!-- /.product-item-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sCatalog-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/hc-sticky/hc-sticky.js"> </script>
+		<script src="libs/select2/js/select2.min.js"> </script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

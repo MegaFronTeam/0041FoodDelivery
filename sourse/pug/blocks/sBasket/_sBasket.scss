@@ -1,0 +1,269 @@
+// start .sBasket
+.sBasket {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+	}
+	&__img-wrap{
+		@include block;
+		@include media-breakpoint-up(lg) {
+
+			width: 120px;
+		} 
+			@include media-breakpoint-up(md) {
+
+				width: 90px;
+			}
+			width: 60px;
+	}
+	&__caption{
+		max-width: 145px;
+	}
+	table{
+		width: 100%;
+		vertical-align: middle;
+		margin-bottom: rem(40);
+
+		.row{
+			align-items: center;
+		}
+		td{
+			@include media-breakpoint-up(md) {
+			border-top: 1px dashed #AEB3B9;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		padding-top: 10px;
+		padding-bottom: 10px;
+			&:last-child{
+				padding-left: rem(54);
+			}
+		}
+		@include media-breakpoint-up(md) {
+		tr:last-child{
+			td{
+				border-bottom: 1px dashed #AEB3B9;
+				
+			}
+	 }
+	 }
+	 &.table-basket{
+
+		 @include media-breakpoint-down(md) {
+			 display: block;
+			tbody{
+				display: block;
+			}
+			tr{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				
+				border-top: 1px dashed #AEB3B9;
+			}
+			td{
+				border: none;
+				&:first-child{
+					flex-grow: 1;
+					width: calc(100% - 35px);
+				}
+				&:last-child{
+					padding-left: 10px;
+				}
+				&:last-child,
+				&:first-child{
+					order: -1;
+				}
+
+			}
+		}
+	}
+}
+	&__price-old{
+		color: $light;
+		text-decoration: line-through;
+	}
+	&__delete{
+		color: $light;
+		.icon{
+			font-size: 24px;
+			fill: none;
+			stroke: currentColor;
+			stroke-width: 1;
+		}
+	}
+	&__promocode{
+			@include media-breakpoint-up(md){
+
+				max-width: 224px;
+			}
+		position: relative;
+		input{
+			padding-right: 50px;
+		}
+		button{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 44px;
+			width: 44px;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			.icon{
+				stroke:  #fff;
+				stroke-width: 1;
+			}
+		}
+	}
+	&__total-pricce {
+		background-color: var(--bs-secondary);
+					font-size: 20px;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 120%;
+			padding: 10px 20px;
+			border-radius: 10px;
+			color: var(--text-secondary, $secondary-text);
+	}
+
+	&__pay-blcok{
+		max-width: 300px;
+		.custom-input {
+			margin-bottom: 15px;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			.row{
+				flex-grow: 1;
+				align-items: center;
+				--bs-gutter-x: 15px;
+			}
+		}
+		.form-check-input{
+			// margin-top: 8px;
+			margin-right: 10px;
+		}
+	}
+
+	.btn-outline-secondary{
+		.icon-arrow-left{
+			fill:none;
+			stroke: currentColor;
+		}
+		span{
+			margin-left: 5px;
+
+		}
+	}
+	&__btn{
+		display: inline-flex;
+		align-items: center;
+			@include media-breakpoint-up(sm) {
+
+				padding: 0 rem(25);
+			}
+			padding: 0 rem(15);
+			white-space: nowrap;
+		height: 42px;
+	}
+	&--ordered{
+		@include media-breakpoint-down(md) {
+			table,
+			thead,
+			tbody,
+			tfoot{
+				display: block;
+			}
+			tr{
+				display: block;
+				border-top: 1px dashed #AEB3B9;
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			tbody{
+				td{ 
+
+					width: 50%;
+					padding-right: 5px;
+					padding-left: 0 !important;
+					padding-top: 5px;
+				}
+				position: relative;
+				td[rowspan="2"]{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: auto;
+				}
+				padding-left: 50px;
+			}
+		}
+		thead{
+			border-top: 1px dashed #AEB3B9;
+		}
+		img{
+			width: 48px;
+			margin-right: 40px;
+		}
+		td{
+			color: $light; 
+			// padding-bottom: 10px !important;
+			font-weight: 300;
+		}
+		tbody{
+			// padding-bottom: 20px;
+		}
+		th{
+			padding-top: 20px;
+		}
+		tfoot{
+			p{
+				max-width: 450px;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sBasket
+
+.panel-block{
+	@include media-breakpoint-up(lg) {
+
+		padding: 30px 40px;
+	}
+	padding: 30px 20px;
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.form-control{
+	font-weight: 300;
+}
+

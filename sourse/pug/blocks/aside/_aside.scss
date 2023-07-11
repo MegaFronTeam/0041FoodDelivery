@@ -1,0 +1,140 @@
+// start .aside
+.aside {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	background-color: var(--bs-primary);
+	padding: 10px 40px;
+	position: relative;
+	@include media-breakpoint-up(lg) {
+
+		position: absolute;
+		overflow: hidden;
+		z-index: 200;
+		left: 0;
+		top: 0;
+		padding: rem(50) rem(20);
+		border-radius: 0px 20px 0px 0px;
+		// min-height: rem(903);
+		
+		height:  calc(100% - 40px);
+		max-height:calc(100vh - 40px);
+		width: 103px;
+	}
+	&__row{ 
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__slider{
+		max-height: 100%;
+	}
+	&__slide{
+		@include media-breakpoint-up(lg) {
+			margin: 10px 0;
+		}
+		margin: 0 10px;
+		// margin-top: rem(10);
+		// margin-bottom: rem(10);
+		width: auto;
+		height: auto;
+	}
+	&__slide{
+		@include media-breakpoint-down(lg){  
+		}
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		height: rem(63);
+		color: $body-color;
+		font-size: 18px;
+		font-weight: 500;
+		@extend .mono;
+		@include media-breakpoint-down(lg){
+			padding-right: rem(20);
+			margin-top: 10px;
+			margin-bottom: 10px;
+			&:hover,
+			&.active{
+					border-radius: rem(100);
+					box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+					background-color: #fff;
+				} 
+
+		
+	}
+	}
+	&__caption{
+		margin-left: rem(15);
+	}
+	&__img-wrap{
+		width: rem(63);
+		height: rem(63);
+		border-radius: 50%;
+		background-color: #000;
+	}
+
+	.swiper-button-hand{
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+		@include media-breakpoint-up(lg) {
+
+			right: auto;
+			left: 50%;
+			margin-left: rem(-20);
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	border: none;
+			// margin-left: c;
+		.icon{
+			stroke: currentColor;
+			stroke-width: 2;
+			font-size: rem(24);
+			width: calc(24/var(--h)*1em);
+			height: 1em;
+		}
+		&-prev{
+			@include media-breakpoint-up(lg){
+
+				top: 19px;
+				bottom: auto;
+				transform: rotateX(180deg);
+			}
+			transform: rotate(90deg);
+		}
+		&-next{
+			@include media-breakpoint-up(lg){
+				
+				top: auto;
+				bottom: 19px;
+				transform: none;
+			}
+			transform: rotate(-90deg);
+		}
+	}
+	&__slider{
+
+		@include media-breakpoint-down(lg) {
+			overflow: visible;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.aside
