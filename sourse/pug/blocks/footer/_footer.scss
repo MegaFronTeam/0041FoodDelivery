@@ -46,6 +46,9 @@
 		a{
 			color: #8C979B;
 			font-weight: 300;
+			&:hover{
+				color: var(--bs-primary);
+			}
 		}
 	}
 	p.strong{

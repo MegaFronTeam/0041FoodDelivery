@@ -99,6 +99,7 @@ $output-bourbon-deprecation-warnings: false;
 // 		// border-color: $pagination-active-border-color;
 // 	}
 // }
+@import "themes/_theme-base.scss"; // Всегда в конце
 @import "root";
 @import "base";
 
@@ -117,4 +118,7 @@ $output-bourbon-deprecation-warnings: false;
 // @import '../pug/blocks/footer/_footer.scss';
 
 @import "media"; // Всегда в конце
+
+@import "themes/_theme-1.scss"; // Всегда в конце
+@import "themes/_theme-2.scss"; // Всегда в конце
 

@@ -13,12 +13,12 @@
 		z-index: 200;
 		left: 0;
 		top: 0;
-		padding: rem(50) rem(20);
+		padding: rem(70) rem(20);
 		border-radius: 0px 20px 0px 0px;
 		// min-height: rem(903);
 		
-		height:  calc(100% - 40px);
-		max-height:calc(100vh - 40px);
+		height:  calc(100% - 20px);
+		max-height:calc(100vh - 20px);
 		width: 103px;
 	}
 	&__row{ 

@@ -1,0 +1,15 @@
+.theme-2{ 
+		--bs-primary: #4ad792;
+		--bs-primary-text: #2CB974;
+		--bs-primary-rgb: 74, 215, 146;
+		--bs-primary-text-rgb: 44, 185, 116;
+		--bs-secondary: #6A415A;
+		--bs-secondary-text: #C49BB4; 
+		--text-secondary: var(--bs-secondary-text);
+		--bs-link-color-rgb:  var(--bs-primary-rgb);
+		--bs-link-hover-color-rgb:  var(--bs-primary-text-rgb);
+		.form-control:focus,
+		.form-select:focus{
+			border-color: var(--bs-primary);
+		}
+}
